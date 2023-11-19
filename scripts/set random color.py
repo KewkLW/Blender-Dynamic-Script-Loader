@@ -33,7 +33,7 @@ def assign_material_to_selection(obj):
     for poly in mesh.polygons:
         if poly.select:
             poly.material_index = mat_index
-    bpy.ops.object.mode_set(mode='OBJECT')  # Switch back to object mode
+    bpy.ops.object.mode_set(mode='EDIT')  # Switch back to edit mode
 
 # Example usage
 obj = bpy.context.active_object
